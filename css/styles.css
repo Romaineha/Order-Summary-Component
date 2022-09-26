@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+}
+
+p {
+  text-align: center;
+  color: hsla(224, 23%, 55%, 1);
+  font-weight: 500;
+}
+
+img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+.container {
+  font-size: 1rem;
+  background-color: #fff;
+  font-family: 'red hat display';
+  text-align: center;
+  border-radius: 1rem;
+  width: 25rem;
+  /* height: 520px; */
+  justify-content: center;
+}
+
+.title {
+  padding: 2.1875rem 0 1.875rem 0;
+}
+
+.description {
+  padding: 0 1.875rem;
+  margin-bottom: 25px;
+
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: .6rem;
+  text-align: center;
+  width: 18.75rem;
+  height: 6rem;
+  margin-left: 2.813rem;
+  white-space: nowrap;
+  padding: 30 auto;
+
+}
+.change-option{
+  padding-left: 3rem;
+  tansition: 300ms;
+  text-decoration: none;
+}
+.price {
+  align-items: center;
+  line-height: 1.6;
+}
+
+.icon {
+  display: flex;
+  width: 5rem;
+  align-items: center;
+  padding: 1rem
+}
+
+.btn {
+  border: none;
+  border-radius: .5rem;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-weight: 900;
+  margin: 0.25rem 0.125rem;
+  margin-top: 1.875rem;
+  cursor: pointer;
+  width: 18.75rem;
+  height: 2.5rem;
+  box-shadow: 0px 12px 50px .25rem rgb(155, 167, 244);
+transition: 300ms;
+}
+
+.cancel {
+  font-weight: 700;
+  margin-top: 1.5625rem;
+  margin-bottom: 2.5rem;
+  font-size: .8em;
+  transition: 300ms;
+
+}
+/* ****Hover States**** */
+
+.btn:hover{
+  opacity:0.8;
+
+}
+.cancel:hover{
+  color: black;
+}
+.change-option:hover{
+opacity: 0.7;
+}
+
+/* ****Media Query***** */
+
+@media screen only and (max-width 26.5625rem) {
+body{
+background-image: url(../images/pattern-background-mobile.svg);
+  font-size: .875rem;
+}
+.container{
+text-align: center;
+max-width: 87%;
+
+}
+.title{
+  font-size: 1.375rem;
+}
+.payment{
+  padding: .75rem;
+}
+.description{
+padding: 9% 7%;
+}
+}
